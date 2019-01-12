@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CloudComputing.Lab2.Calculator.WCFService.WebRole.Calculator" CodeBehind="Calculator.svc.cs" %>

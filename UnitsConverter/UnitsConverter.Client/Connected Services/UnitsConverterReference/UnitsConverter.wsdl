@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UnitsConverter" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CloudComputing.Lab2.UnitsConverter.Model" />
+      <xsd:import schemaLocation="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUnitsConverter_GetSupportedTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportedTypes" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_GetSupportedTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportedTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_GetSupportedUnits_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportedUnits" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_GetSupportedUnits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportedUnitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_GetSupportedUnitsByType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportedUnitsByType" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_GetSupportedUnitsByType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportedUnitsByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_IsUnitCodeSupported_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUnitCodeSupported" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_IsUnitCodeSupported_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUnitCodeSupportedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_IsUnitTypeSupported_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUnitTypeSupported" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_IsUnitTypeSupported_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUnitTypeSupportedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_Convert_InputMessage">
+    <wsdl:part name="parameters" element="tns:Convert" />
+  </wsdl:message>
+  <wsdl:message name="IUnitsConverter_Convert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUnitsConverter">
+    <wsdl:operation name="GetSupportedTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnitsConverter/GetSupportedTypes" message="tns:IUnitsConverter_GetSupportedTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnitsConverter/GetSupportedTypesResponse" message="tns:IUnitsConverter_GetSupportedTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupportedUnits">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnitsConverter/GetSupportedUnits" message="tns:IUnitsConverter_GetSupportedUnits_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnitsConverter/GetSupportedUnitsResponse" message="tns:IUnitsConverter_GetSupportedUnits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupportedUnitsByType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnitsConverter/GetSupportedUnitsByType" message="tns:IUnitsConverter_GetSupportedUnitsByType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnitsConverter/GetSupportedUnitsByTypeResponse" message="tns:IUnitsConverter_GetSupportedUnitsByType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUnitCodeSupported">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnitsConverter/IsUnitCodeSupported" message="tns:IUnitsConverter_IsUnitCodeSupported_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnitsConverter/IsUnitCodeSupportedResponse" message="tns:IUnitsConverter_IsUnitCodeSupported_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUnitTypeSupported">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnitsConverter/IsUnitTypeSupported" message="tns:IUnitsConverter_IsUnitTypeSupported_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnitsConverter/IsUnitTypeSupportedResponse" message="tns:IUnitsConverter_IsUnitTypeSupported_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Convert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnitsConverter/Convert" message="tns:IUnitsConverter_Convert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnitsConverter/ConvertResponse" message="tns:IUnitsConverter_Convert_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUnitsConverter" type="tns:IUnitsConverter">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSupportedTypes">
+      <soap:operation soapAction="http://tempuri.org/IUnitsConverter/GetSupportedTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupportedUnits">
+      <soap:operation soapAction="http://tempuri.org/IUnitsConverter/GetSupportedUnits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupportedUnitsByType">
+      <soap:operation soapAction="http://tempuri.org/IUnitsConverter/GetSupportedUnitsByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUnitCodeSupported">
+      <soap:operation soapAction="http://tempuri.org/IUnitsConverter/IsUnitCodeSupported" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUnitTypeSupported">
+      <soap:operation soapAction="http://tempuri.org/IUnitsConverter/IsUnitTypeSupported" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Convert">
+      <soap:operation soapAction="http://tempuri.org/IUnitsConverter/Convert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UnitsConverter">
+    <wsdl:port name="BasicHttpBinding_IUnitsConverter" binding="tns:BasicHttpBinding_IUnitsConverter">
+      <soap:address location="http://localhost:26334/UnitsConverter.cs.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

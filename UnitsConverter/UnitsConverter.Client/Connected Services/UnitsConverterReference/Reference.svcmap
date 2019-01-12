@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="60c556dc-71b9-466d-8b17-07348b37406d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:26334/UnitsConverter.cs.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UnitsConverter.xsd" MetadataType="Schema" ID="65896339-bd30-4f58-8a89-a5c6fbf1d886" SourceId="1" SourceUrl="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd2" />
+    <MetadataFile FileName="UnitsConverter.wsdl" MetadataType="Wsdl" ID="734fe02e-3ff9-4316-8909-795d7d63b19f" SourceId="1" SourceUrl="http://localhost:26334/UnitsConverter.cs.svc?wsdl" />
+    <MetadataFile FileName="UnitsConverter1.xsd" MetadataType="Schema" ID="32755518-6530-4057-aef0-c9b82a848f12" SourceId="1" SourceUrl="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd3" />
+    <MetadataFile FileName="UnitsConverter2.xsd" MetadataType="Schema" ID="09a0c897-85ea-401e-b276-b9905e9640a5" SourceId="1" SourceUrl="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd0" />
+    <MetadataFile FileName="UnitsConverter3.xsd" MetadataType="Schema" ID="cca84a18-a3ac-48a9-b15e-f8064f49627a" SourceId="1" SourceUrl="http://localhost:26334/UnitsConverter.cs.svc?xsd=xsd1" />
+    <MetadataFile FileName="UnitsConverter.disco" MetadataType="Disco" ID="a1fbdcee-f107-48f4-805a-3b9ab772f76f" SourceId="1" SourceUrl="http://localhost:26334/UnitsConverter.cs.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

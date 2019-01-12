@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9d351b3-db67-4c6b-ad0e-bbc1521be249" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:38275/RandomNumber.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RandomNumber.xsd" MetadataType="Schema" ID="2d232af3-f968-4136-b05a-1ffef3c2fb08" SourceId="1" SourceUrl="http://localhost:38275/RandomNumber.svc?xsd=xsd2" />
+    <MetadataFile FileName="RandomNumber1.xsd" MetadataType="Schema" ID="133ee2b9-e7e6-42d0-b7e9-99d8b0686fa5" SourceId="1" SourceUrl="http://localhost:38275/RandomNumber.svc?xsd=xsd1" />
+    <MetadataFile FileName="RandomNumber.disco" MetadataType="Disco" ID="bdf77873-a2b3-44e9-81c2-26756148edc4" SourceId="1" SourceUrl="http://localhost:38275/RandomNumber.svc?disco" />
+    <MetadataFile FileName="RandomNumber.wsdl" MetadataType="Wsdl" ID="fe125607-3374-46c8-bbd6-20848893d95b" SourceId="1" SourceUrl="http://localhost:38275/RandomNumber.svc?wsdl" />
+    <MetadataFile FileName="RandomNumber2.xsd" MetadataType="Schema" ID="cd35ab3f-b4bd-40bc-bd4a-276903a34963" SourceId="1" SourceUrl="http://localhost:38275/RandomNumber.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CloudComputing.Lab2.UnitsConverter.WCFService.WebRole.UnitsConverter" CodeBehind="UnitsConverter.cs.svc.cs" %>
